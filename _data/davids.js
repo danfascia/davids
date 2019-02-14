@@ -5,8 +5,7 @@ var url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTYLfsjrQbFTiIctfxgJw
 
 module.exports = async function f() {
 
-    let dataObj = await axios.get(url).then(console.log("[11ty] In come the Davids..."));
-
-    return csv.toObject(dataObj.data)
-
+    let dataObj = await axios.get(url).then(console.log("[11ty] In come the Davids..."))
+    const jsonOut = csv.toObject(dataObj.data)
+    return jsonOut
 }

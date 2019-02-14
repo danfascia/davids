@@ -1,0 +1,21 @@
+---
+layout: base
+pagination:
+  data: davids
+  size: 1
+  alias: david
+permalink: davids/{{ david.name | slug }}/index.html
+---
+<h1>{{david.name}}</h1>
+
+<ul>
+    <li>{{david.gender}}</li>
+    <li>{{david.dob}}</li>
+    <li>{{david.favourite_colour}}</li>
+</ul>
+
+<p>
+  <a href="/">Back to Index</a>
+</p>
+
+<hr>
