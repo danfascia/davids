@@ -8,33 +8,37 @@
 
     <style>
         html {
-            line-height: 1.6rem;
+            line-height: 2rem;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 18px;
+            font-size: 19px;
             background-color: #222;
         }
 
         body {
             max-width: 900px;
             margin: 2rem auto;
-            background: #ddd;
+            background: #fafafb;
             padding: 2rem;
         }
+
+        h1 { font-size: 3rem;}
     </style>
 
 </head>
 <body>
     
-    <h1>Davids</h1>
+    <h1>🛀 Famous Davids</h1>
     <p>
         Demo <a href="https://11ty.io">Eleventy</a> application to showcase a Google Forms based static content posting system.
     </p>
     <h3>How it works</h3>
     <ol>
         <li>Post an entry using <a href="https://docs.google.com/forms/d/e/1FAIpQLScjSOj7TIS-OAD-ytJBdqUb5PtF5FUBOlEJ9KWXylAdSdv8Yg/viewform">this Google Form</a></li>
-        <li>This will be stored in a Google Sheet which is published as CSV to <a href="https://sheety.co">Sheety API</a> resulting in <a href="https://api.sheety.co/a802849e-6e65-4e4c-afdb-1acef4becb9a">this JSON endpoint</a> </li>
-        <li>Eleventy consumes the data file and publishes it from the <code>_data</code> folder</li>
+        <li>This will be stored in a Google Sheet which is published to a <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTYLfsjrQbFTiIctfxgJwFt_Bvnrv0jLmBbr3wcATDf1lzRcHePnQ_fKVeFMms0T3pZB8t-OwtzyKG2/pub?output=csv">CSV endpoint</a></li>
+        <li>Eleventy consumes the CSV and mutates it into a JSON object at build time via the <code>_data</code> folder</li>
+        <li>Every time a new David is added to the Google Sheet, an IFTTT watcher calls a rebuild webhook on netlify</li>
     </ol>
+    <h4>Just show me the David's</h4>
     <ul>
     
     <li>David Attenbrough - b.10/02/1965 - favourite colour = Blue</li>
@@ -46,6 +50,10 @@
     <li>David Bowie - b.09/12/1954 - favourite colour = Yellow</li>
     
     <li>David Mellor - b.09/10/1934 - favourite colour = Red</li>
+    
+    <li>David Hasselhof - b.01/01/1950 - favourite colour = Black</li>
+    
+    <li>David Letterman - b.09/08/1945 - favourite colour = Pink</li>
     
     </ul>
 </body>
