@@ -1,0 +1,12 @@
+{
+  "name": "davids",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "11ty/eleventy",
+    "axios": "^0.18.0",
+    "csvjson": "^5.1.0"
+  },
+  "dependencies": {}
+}
