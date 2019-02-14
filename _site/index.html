@@ -38,10 +38,13 @@
         <li>Eleventy consumes the CSV and mutates it into a JSON object at build time via the <code>_data</code> folder</li>
         <li>Every time a new David is added to the Google Sheet, an IFTTT watcher calls a rebuild webhook on netlify</li>
     </ol>
+
+    <p>The benefit of this approach is that API intermediaries such as <a href="https://sheety.co">Sheety API</a> are unecessary</p>
+
     <h4>Just show me the David's</h4>
     <ul>
     
-    <li>David Attenbrough - b.10/02/1965 - favourite colour = Blue</li>
+    <li>David Attenbrough - b.10/02/1965 - favourite colour = Purple</li>
     
     <li>David Beckham - b.23/04/1975 - favourite colour = Pink</li>
     
@@ -55,6 +58,20 @@
     
     <li>David Letterman - b.09/08/1945 - favourite colour = Pink</li>
     
+    <li>David Duchovny - b.04/02/1968 - favourite colour = Orange</li>
+    
+    <li>David Tennant - b.19/02/1972 - favourite colour = Green</li>
+    
+    <li>David Guetta - b.06/06/1966 - favourite colour = Red</li>
+    
     </ul>
+
+    <p><a href="https://github.com/danfascia/davids">View Source on GitHub</a></p>
+
+    <h4>To Do</h4>
+    <ol>
+        <li>Create a single David template for paginated output so that each one has his own entry</li>
+        <li>Create loop logic and file naming convention for singles</li>
+    </ol>
 </body>
 </html>
